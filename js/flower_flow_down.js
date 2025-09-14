@@ -63,7 +63,7 @@ function startSakura() {
     A = i.getContext("2d");
 
     var t = new SakuraList;
-    for (var g = 0; g < 6; g++) {
+    for (var g = 0; g < 8; g++) {
         var B, I, o, a, e, R, n;
         I = getRandom("x");
         o = getRandom("y");
