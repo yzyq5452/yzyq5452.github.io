@@ -836,17 +836,17 @@ i.iconfont {
 :root {
   --color-mode: "light";
   --body-bg-color: #2E294E;
-  --board-bg-color: #fff;
+  --board-bg-color: #FFEEE4;
   --text-color: #3c4858;
   --sec-text-color: #718096;
-  --post-text-color: #2c3e50;
-  --post-heading-color: #1a202c;
+  --post-text-color: #566270;
+  --post-heading-color: #566270;
   --post-link-color: #D499B9;
   --link-hover-color: #9055A2;
   --link-hover-bg-color: #f8f9fa;
   --line-color: #eaecef;
-  --navbar-bg-color: #011638;
-  --navbar-text-color: #fff;
+  --navbar-bg-color: #2E294E;
+  --navbar-text-color: #FFEEE4;
   --subtitle-color: #FFEEE4;
   --scrollbar-color: #D499B9;
   --scrollbar-hover-color: #9055A2;
