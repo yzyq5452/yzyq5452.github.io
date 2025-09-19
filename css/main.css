@@ -836,11 +836,11 @@ i.iconfont {
 :root {
   --color-mode: "light";
   --body-bg-color: #F7EEF3;
-  --board-bg-color: #FFEEE4;
+  --board-bg-color: #FFFFF3;
   --text-color: #3c4858;
   --sec-text-color: #718096;
-  --post-text-color: #566270;
-  --post-heading-color: #566270;
+  --post-text-color: #383A3F;
+  --post-heading-color: #383A3F;
   --post-link-color: #D499B9;
   --link-hover-color: #9055A2;
   --link-hover-bg-color: #f8f9fa;
