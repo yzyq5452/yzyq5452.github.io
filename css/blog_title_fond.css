@@ -1,0 +1,15 @@
+/* Allura — 优雅细笔书法，适合钢笔手写 */
+/*#navbar,*/
+#navbar .* {
+  font-family: "Allura", "Dancing Script", "Alex Brush", "Pacifico", cursive;
+  font-style: italic;
+  font-weight: 100;
+  font-size: clamp(0.6rem, 3.2vw, 1.2rem); /* 响应式字号 */
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1;
+  /* 轻微“笔墨”效果（可选） */
+  text-shadow: 0 0.6px 0 rgba(0,0,0,0.03);
+}
