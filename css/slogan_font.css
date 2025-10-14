@@ -1,6 +1,6 @@
-#subtitle,
-#subtitle span,
-#subtitle .typing {
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle,
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle span,
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle .typing {
   font-family: "Allura", "Dancing Script", "Alex Brush", "Pacifico", cursive;
   font-style: italic;
   font-weight: 400;
