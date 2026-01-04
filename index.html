@@ -1,0 +1,732 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/bg/Icon.png">
+  <link rel="icon" href="/img/bg/Icon.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#353052">
+  <meta name="author" content="yzyq5452">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="yzyq5452&#39;s blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="yzyq5452&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="yzyq5452">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  
+  <title>yzyq5452&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/slogan_font.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":false,"typeSpeed":20,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#EBD5E3","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>yzyq5452&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/bg/backgroundabout.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">You pierce my soul. I am half agony, half hope.</span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/08/17/Dissociative-Identity-Disorder/" target="_self">
+          人格分裂
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/08/17/Dissociative-Identity-Disorder/" target="_self">
+        <div>
+          本文与现实世界无关             原来我从没有学过OI，也从没有见过她。   原来我从没有踏进过那所班级，也从来没有遇到过那些人。   原来所有人都在骗我。但我看不穿他们的假面，也无法带上脆弱的面具。   原来我从没有变。我仍然喜欢将残页给别人看，并不在乎别人是否赞美。因为她一开始就说了，她喜欢那一抹奇幻色彩。   原来这一切都是我
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-08-17 22:36" pubdate>
+              2025-08-17
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/01/04/2026-01-04/" target="_self">
+          2026.01.04
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/01/04/2026-01-04/" target="_self">
+        <div>
+          这算鲜花吗？  发生了一件很逆天的事情。 虽然我并不意外有的人喜欢画蛇添足，但最近是不是有些太频繁了。感觉骂人也没啥用，哈哈。 因此，相比于法律、宗教啥的，钱还是最重要的东西。？ 运气真好 (ಥ﹏ಥ)
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-01-04 22:45" pubdate>
+              2026-01-04
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/11/19/coffee/" target="_self">
+          咖啡
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/11/19/coffee/" target="_self">
+        <div>
+          我妈很喜欢咖啡，所以小时候我身边经常弥漫着咖啡的气味。不过当时我是不太能接受那种苦涩的味道的，也很好奇为什么这么多人都喜欢和咖啡。 第一次喝咖啡大概是小学的时候，后面可能也偶尔喝过，不过我一直都不太喜欢。直到上了初中，由于一些事情我经常睡不着觉，便喜欢在外面散步。有一次偶然走到了一家便利店，不知为何，我突然想买一杯咖啡。便利店的咖啡自然质量不高，味道远比不上小学时我妈给我买的。不过奇怪的是，我突
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-11-19 23:26" pubdate>
+              2025-11-19
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/11/16/2025-11-16/" target="_self">
+          2025.11.16
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/11/16/2025-11-16/" target="_self">
+        <div>
+          拜人类所赐，我的精神状态严重下降了。果然我还是更适合当一个独居动物。最近每天都把很多时间耗费在胡思乱想上，导致游戏和B站时间大幅降低，唉。搞笑的是当初我爸问我想不想上高中的时候，我以”与同学交流可以提升心理健康”为由同意了。  还是得看点开心的事情，比如马上开始的MHC。又有很长一段时间没碰CP了，不过还是希望能进前2000拿件衣服。  我之前好像给自己留了个DDL，在11月16日前将所有
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-11-16 00:35" pubdate>
+              2025-11-16
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/11/05/2025-11-05/" target="_self">
+          2025.11.05
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/11/05/2025-11-05/" target="_self">
+        <div>
+          感冒快两周了，感觉身体已经不太具备免疫功能了。不知道还能撑多久。 因为没上晚自习，晚上便有很多时间和父母久违地聊天。其实从小学开始我父母就会经常打探我和一些女同学的关系以促进我谈恋爱，尽管以我的性格肯定是从来没有实现过他们的愿望的。于是这次谈到班上的同学的时候，我爸又开始有意地和我聊一位女同学。然后我爸问我对她的评价，我说她比我强。我爸愣了一下，他说这应该是我第一次如此认可他的眼光。不过也有可能
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-11-05 21:31" pubdate>
+              2025-11-05
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/10/21/2025-10-21/" target="_self">
+          2025.10.21
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/10/21/2025-10-21/" target="_self">
+        <div>
+          鲜花是允许随机说话的。  这两天一直在研究如何同时在一行或几行插入多张图片，但是一直无法调整它们的大小。于是我便去用户手册里看作者是怎么写的，结果发现他们先将多张图片组在一起，然后截图(?)。于是就有了一张可以随意调节大小的图片了。好神奇的方法。    原来bg是background的意思。但是我非常唐的在img下建了个bg，然后把所有非背景的图片放在了bg下。所有我现在每次想看我博客
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-10-21 20:59" pubdate>
+              2025-10-21
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/10/14/forgetting/" target="_self">
+          遗忘
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/10/14/forgetting/" target="_self">
+        <div>
+          小学的时候有些同学经常用教室的一体机搜索一些在当时看来很高深的东西，然后在黑板上写一堆难懂的数学符号。做这件事好像确实能吸引许多人，至少对我来说，虽然我已经记不清小学时的很多事情，但这件事却一直记得。我一直觉得这种做法是低素质的。不过现在我对他们有了点不同的看法，至少他们是自信的。 刚学英语的时候背过一个单词”hierarchy”，因为读音复杂，而且我不太能理解”等级制度”是什么意思，所以背了很
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-10-14 20:45" pubdate>
+              2025-10-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/10/12/CS-travel-note/" target="_self">
+          <img src="/img/bg/CS_tn/IMG_20251001_215310.jpg" srcset="/img/loading.gif" lazyload alt="长沙游记">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/10/12/CS-travel-note/" target="_self">
+          长沙游记
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2025/10/12/CS-travel-note/" target="_self">
+        <div>
+          前言 鸽太久了，导致很多东西都记不太清了。所以就随便写写。 正好换一种写法试试。 DAY 1 抵达长沙后的第一餐是在一个装修风格很老式的商场里吃的。可能叫古镇更合适，因为路的两侧布满了小吃摊和饮料店，也有很多店员在吆喝。第一顿肯定得点一些特色菜，所以我们点了辣椒炒肉，臭豆腐，以及以某种形式烹饪的鳝鱼(其实我觉得服务员可能是把这道菜上错了，因为我记得菜名中出现了”辣椒”)。  还见到了非
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-10-12 20:33" pubdate>
+              2025-10-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B8%B8%E8%AE%B0/">#游记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/09/28/NAIVE/" target="_self">
+          <img src="/img/bg/Naive/34774222_091027648107_2.jpg" srcset="/img/loading.gif" lazyload alt="莱伊弗">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/09/28/NAIVE/" target="_self">
+          莱伊弗
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt " href="/2025/09/28/NAIVE/" target="_self">
+        <div>
+          莱伊弗准备向他喜欢的女孩表白了。 他把女孩约到了天台，这是他们最喜欢的地方。他们经常在这里一边欣赏晚霞，一边聊天。 女孩朝莱伊弗走了过去。莱伊弗的呼吸急促的不能控制，心跳加速的无法抑制。 莱伊弗下意识的向后退了一步。 一阵晚风吹过。 女孩因此拍到了一张美丽的晚霞。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-09-28 21:25" pubdate>
+              2025-09-28
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/09/04/No-QX/" target="_self">
+          今天不是七夕
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/09/04/No-QX/" target="_self">
+        <div>
+          据说有七成的高中生情侣会在一年内分手   若连毕业后的也算上，几乎可以说是全军覆没   但所有人依然投身于恋爱的折腾   时而哭泣，时而欢笑   我并不期望现实和自己的内心会被这种短暂的关系动摇   但我有时会想   如果我有那种青春的话   要是眼前会有那种为我流泪的女主角的话   要是我是轻小说男主角的话   那个时候，我会有什么感受呢
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-09-04 11:36" pubdate>
+              2025-09-04
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E9%B2%9C%E8%8A%B1/">#鲜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span> </span></a> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span> </span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

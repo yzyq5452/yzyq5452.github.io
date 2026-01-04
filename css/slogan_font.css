@@ -1,0 +1,15 @@
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle,
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle span,
+.header-inner[style*="100vh"] > #banner .full-bg-img .mask .banner-text .h2 > #subtitle .typing {
+  font-family: "Allura", "Dancing Script", "Alex Brush", "Pacifico", cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 3.2vw, 2.4rem); /* 响应式字号 */
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1;
+  /* 轻微“笔墨”效果（可选） */
+  text-shadow: 0 0.6px 0 rgba(0,0,0,0.03);
+}
