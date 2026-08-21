@@ -1,0 +1,400 @@
+/* ==========================================================================
+   Zen Paper & Warm Rose Theme Stylesheet (禅意纸质 · 暖调玫瑰色系)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --rose-bg: #FAF4F4;
+  --rose-board-bg: #FDFBFB;
+  --rose-text: #2E2428;
+  --rose-sec-text: #705D63;
+  --rose-dim-text: #968389;
+  --rose-accent: #B86B77;
+  --rose-accent-hover: #9E4D5B;
+  --rose-accent-light: #F6EBED;
+  --rose-accent-border: rgba(184, 107, 119, 0.25);
+  --rose-line: rgba(184, 107, 119, 0.18);
+  --rose-shadow: 0 8px 24px rgba(184, 107, 119, 0.05);
+  --font-serif: "Noto Serif SC", "Songti SC", "Source Han Serif SC", "STSong", SimSun, "Times New Roman", serif;
+  --font-mono: "Fira Code", "JetBrains Mono", Consolas, Menlo, monospace;
+}
+
+/* ================= Global & Typography ================= */
+html, body {
+  background-color: var(--rose-bg) !important;
+  color: var(--rose-text) !important;
+  font-family: var(--font-serif) !important;
+  letter-spacing: 0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif) !important;
+  color: var(--rose-text) !important;
+  letter-spacing: 0.035em;
+}
+
+a {
+  color: var(--rose-accent);
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  color: var(--rose-accent-hover);
+  text-decoration: none;
+}
+
+/* ================= Board / Main Container ================= */
+#board {
+  background-color: var(--rose-board-bg) !important;
+  border: 1px solid var(--rose-line) !important;
+  box-shadow: var(--rose-shadow) !important;
+  border-radius: 14px !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+@media (max-width: 767px) {
+  #board {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+}
+
+/* ================= Navbar ================= */
+.navbar {
+  font-family: var(--font-serif) !important;
+  background-color: rgba(56, 41, 46, 0.88) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  letter-spacing: 0.04em;
+}
+
+.navbar .navbar-brand {
+  font-family: var(--font-serif) !important;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 1.18rem;
+  color: #FAF4F4 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 0.94rem;
+  color: rgba(250, 244, 244, 0.85) !important;
+  transition: all 0.2s ease;
+  padding: 0.4rem 0.8rem !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FAF4F4 !important;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+/* ================= Home Post List (Zen Paper Layout) ================= */
+.index-card {
+  border-bottom: 1px dashed var(--rose-line) !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 1.6rem 0.8rem !important;
+  margin-bottom: 0 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.index-card:last-child {
+  border-bottom: none !important;
+}
+
+.index-card:hover {
+  transform: translateX(4px);
+  border-bottom-style: solid !important;
+  border-bottom-color: var(--rose-accent) !important;
+  background-color: rgba(246, 235, 237, 0.35) !important;
+}
+
+.index-header {
+  font-family: var(--font-serif) !important;
+  font-weight: 600;
+  font-size: 1.3rem !important;
+  color: var(--rose-text) !important;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.index-header a {
+  color: var(--rose-text) !important;
+  text-decoration: none !important;
+}
+
+.index-card:hover .index-header a {
+  color: var(--rose-accent) !important;
+}
+
+.index-excerpt {
+  font-family: var(--font-serif) !important;
+  font-size: 0.95rem !important;
+  color: var(--rose-sec-text) !important;
+  line-height: 1.85 !important;
+  margin: 0.6rem 0;
+  text-align: justify;
+}
+
+.index-btm {
+  font-size: 0.84rem !important;
+  color: var(--rose-dim-text) !important;
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.index-btm i {
+  margin-right: 4px;
+  color: var(--rose-accent);
+}
+
+/* ================= Tags & Category Badges ================= */
+.post-meta .post-tag,
+.index-btm a,
+.tagcloud a,
+.tag-list .tag-list-item,
+.tag-cloud-tags a {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--rose-accent-light) !important;
+  color: var(--rose-accent) !important;
+  border: 1px solid var(--rose-accent-border) !important;
+  border-radius: 6px !important;
+  padding: 2px 10px !important;
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease !important;
+}
+
+.post-meta .post-tag:hover,
+.index-btm a:hover,
+.tagcloud a:hover,
+.tag-list .tag-list-item:hover,
+.tag-cloud-tags a:hover {
+  background-color: var(--rose-accent) !important;
+  color: #FFFFFF !important;
+  border-color: var(--rose-accent) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(184, 107, 119, 0.25);
+}
+
+/* ================= Post Article & Markdown Details ================= */
+.markdown-body {
+  font-family: var(--font-serif) !important;
+  font-size: 1.05rem !important;
+  line-height: 2.05 !important;
+  color: var(--rose-text) !important;
+  letter-spacing: 0.025em;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-family: var(--font-serif) !important;
+  font-weight: 600;
+  color: var(--rose-text) !important;
+  letter-spacing: 0.04em;
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.markdown-body h1 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--rose-line);
+  padding-bottom: 0.5rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.45rem;
+  border-bottom: 1px dashed var(--rose-line);
+  padding-bottom: 0.4rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+}
+
+.markdown-body p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Zen Paper Blockquotes */
+.markdown-body blockquote {
+  font-family: var(--font-serif) !important;
+  font-style: normal;
+  border-left: 3.5px solid var(--rose-accent) !important;
+  background-color: var(--rose-accent-light) !important;
+  color: var(--rose-sec-text) !important;
+  padding: 1.1rem 1.5rem !important;
+  margin: 1.8rem 0 !important;
+  border-radius: 0 10px 10px 0;
+  line-height: 1.95;
+  box-shadow: 0 2px 8px rgba(184, 107, 119, 0.04);
+}
+
+.markdown-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Post Inline Links */
+.markdown-body a {
+  color: var(--rose-accent) !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed var(--rose-accent-border);
+  padding-bottom: 1px;
+  transition: all 0.2s ease;
+}
+
+.markdown-body a:hover {
+  color: var(--rose-accent-hover) !important;
+  border-bottom-style: solid;
+  border-bottom-color: var(--rose-accent-hover);
+}
+
+/* Images in Articles */
+.markdown-body img {
+  border-radius: 8px;
+  border: 1px solid var(--rose-line);
+  box-shadow: 0 4px 14px rgba(184, 107, 119, 0.08);
+  margin: 1.2rem auto;
+  display: block;
+}
+
+/* Code Blocks */
+.markdown-body pre,
+.markdown-body code {
+  font-family: var(--font-mono) !important;
+}
+
+.markdown-body pre {
+  border-radius: 10px !important;
+  border: 1px solid var(--rose-line) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.markdown-body :not(pre) > code {
+  background-color: var(--rose-accent-light) !important;
+  color: var(--rose-accent-hover) !important;
+  border: 1px solid var(--rose-accent-border) !important;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 0.88em;
+}
+
+/* Table of Contents (TOC) */
+#toc {
+  font-family: var(--font-serif) !important;
+}
+
+.tocbot-list a {
+  color: var(--rose-sec-text) !important;
+  transition: all 0.2s ease;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.tocbot-list a:hover {
+  color: var(--rose-accent) !important;
+}
+
+.tocbot-list a.is-active-link {
+  color: var(--rose-accent) !important;
+  font-weight: 600;
+  border-left: 2px solid var(--rose-accent);
+  padding-left: 8px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+}
+
+.pagination .page-number,
+.pagination .prev,
+.pagination .next {
+  font-family: var(--font-serif);
+  color: var(--rose-sec-text) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--rose-line) !important;
+  border-radius: 6px !important;
+  margin: 0 4px;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.pagination .page-number.current,
+.pagination .page-number:hover,
+.pagination .prev:hover,
+.pagination .next:hover {
+  background-color: var(--rose-accent) !important;
+  color: #FFFFFF !important;
+  border-color: var(--rose-accent) !important;
+  box-shadow: 0 2px 8px rgba(184, 107, 119, 0.2);
+}
+
+/* Archives & Tag List Pages */
+.list-group-item {
+  background-color: transparent !important;
+  border-color: var(--rose-line) !important;
+  font-family: var(--font-serif) !important;
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(246, 235, 237, 0.35) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--rose-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rose-accent-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rose-accent);
+}
+
+/* Footer */
+footer {
+  font-family: var(--font-serif) !important;
+  color: var(--rose-sec-text) !important;
+  padding: 2.5rem 0 2rem !important;
+  border-top: 1px solid var(--rose-line);
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--rose-sec-text) !important;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--rose-accent) !important;
+}
