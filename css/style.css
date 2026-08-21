@@ -2,7 +2,7 @@
    Zen-Rose: Bespoke Minimalist Paper & Rose Theme for Hexo
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Fira+Code:wght@400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap');
 
 :root {
   --bg: #FAF4F4;
@@ -71,10 +71,11 @@ a:hover {
 .site-header {
   padding: 42px 0 28px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--line-color);
   margin-bottom: 36px;
+  min-height: 80px;
 }
 
 .site-brand a {
@@ -91,15 +92,18 @@ a:hover {
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 22px;
   font-size: 0.95rem;
 }
 
 .site-nav a {
+  display: inline-block;
   color: var(--text-sec);
   letter-spacing: 0.04em;
   position: relative;
-  padding-bottom: 4px;
+  padding: 4px 0;
+  line-height: 1.5;
   transition: color 0.2s ease;
 }
 
@@ -109,7 +113,7 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 1.5px;
+  height: 2px;
   background-color: var(--rose-accent);
   transform: scaleX(0);
   transform-origin: right;
@@ -134,13 +138,13 @@ a:hover {
 }
 
 .zen-quote {
-  font-family: "Allura", "Dancing Script", "Alex Brush", cursive, var(--font-serif);
-  font-size: 1.7rem;
+  font-family: "Allura", "Dancing Script", "Alex Brush", "Brush Script MT", "Great Vibes", "Caveat", cursive, Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   font-style: italic;
   font-weight: 400;
   color: var(--text-sec);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
   text-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.03);
 }
 
