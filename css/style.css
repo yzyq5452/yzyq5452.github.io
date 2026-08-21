@@ -99,13 +99,32 @@ a:hover {
   color: var(--text-sec);
   letter-spacing: 0.04em;
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--rose-accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
   color: var(--text-main);
-  border-bottom: 1.5px solid var(--rose-accent);
+}
+
+.site-nav a:hover::after,
+.site-nav a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* ================= Hero / Slogan Quote ================= */
@@ -115,11 +134,14 @@ a:hover {
 }
 
 .zen-quote {
-  font-size: 1.05rem;
+  font-family: "Allura", "Dancing Script", "Alex Brush", cursive, var(--font-serif);
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 400;
   color: var(--text-sec);
-  letter-spacing: 0.06em;
-  font-style: normal;
-  line-height: 1.9;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.03);
 }
 
 .zen-divider {
@@ -148,7 +170,7 @@ a:hover {
 .post-entry {
   padding: 22px 0 24px;
   border-bottom: 1px dashed var(--line-dashed);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: border-color 0.2s ease;
 }
 
 .post-entry:last-child {
@@ -156,8 +178,6 @@ a:hover {
 }
 
 .post-entry:hover {
-  padding-left: 6px;
-  border-bottom-style: solid;
   border-bottom-color: var(--rose-accent);
 }
 
@@ -448,7 +468,6 @@ a:hover {
 }
 
 .archive-item:hover {
-  padding-left: 6px;
   border-bottom-color: var(--rose-accent);
 }
 
